@@ -16,6 +16,7 @@
 		C681379321EB9E00001FC737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681379121EB9E00001FC737 /* Main.storyboard */; };
 		C681379521EB9E02001FC737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C681379421EB9E02001FC737 /* Assets.xcassets */; };
 		C681379821EB9E02001FC737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C681379621EB9E02001FC737 /* LaunchScreen.storyboard */; };
+		C6F3265422076237006D5EEA /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F3265322076237006D5EEA /* SwipeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C681379421EB9E02001FC737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C681379721EB9E02001FC737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C681379921EB9E02001FC737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6F3265322076237006D5EEA /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				C606313121F751A900748000 /* CategoryViewController.swift */,
 				C681378F21EB9E00001FC737 /* TodoListViewController.swift */,
+				C6F3265322076237006D5EEA /* SwipeTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,15 +232,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Todoey/Pods-Todoey-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				C606313221F751A900748000 /* CategoryViewController.swift in Sources */,
 				C681379021EB9E00001FC737 /* TodoListViewController.swift in Sources */,
 				C681378E21EB9E00001FC737 /* AppDelegate.swift in Sources */,
+				C6F3265422076237006D5EEA /* SwipeTableViewController.swift in Sources */,
 				C607CD8021FDBA3B004EAA04 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -387,7 +395,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -403,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HYVFLX388;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,6 +430,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9HYVFLX388;
 				INFOPLIST_FILE = Todoey/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
